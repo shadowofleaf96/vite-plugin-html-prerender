@@ -4,6 +4,7 @@
   "description": "Vite.js plugin for pre-rendering html for SPAs.",
   "type": "module",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
     "prepublishOnly": "npm run build",
