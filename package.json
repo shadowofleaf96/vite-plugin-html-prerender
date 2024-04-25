@@ -1,6 +1,6 @@
 {
   "name": "vite-plugin-html-prerender",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Vite.js plugin for pre-rendering html for SPAs.",
   "main": "dist/index.js",
   "scripts": {
