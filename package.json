@@ -2,7 +2,7 @@
   "name": "vite-plugin-html-prerender",
   "version": "0.2.1",
   "description": "Vite.js plugin for pre-rendering html for SPAs.",
-  "type": "commonjs",
+  "type": "module",
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/saeedafzal/vite-plugin-html-prerender.git"
+    "url": "git+https://github.com/shadowofleaf96/vite-plugin-html-prerender.git"
   },
   "keywords": [
     "vite",
@@ -20,9 +20,9 @@
   "author": "Saeed Afzal",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/saeedafzal/vite-plugin-html-prerender/issues"
+    "url": "https://github.com/shadowofleaf96/vite-plugin-html-prerender/issues"
   },
-  "homepage": "https://github.com/saeedafzal/vite-plugin-html-prerender#readme",
+  "homepage": "https://github.com/shadowofleaf96/vite-plugin-html-prerender#readme",
   "files": [
     "dist"
   ],
