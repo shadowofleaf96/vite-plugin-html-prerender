@@ -1,4 +1,4 @@
-import { RenderedRoute } from "./types.js";
+import { RenderedRoute } from "./types";
 export default class Renderer {
     private _browser?;
     init(): Promise<void>;

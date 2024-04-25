@@ -1,2 +1,2 @@
-import htmlPrerender from "./prerender.js";
+import htmlPrerender from "./prerender";
 export { htmlPrerender };

@@ -1,6 +1,11 @@
-import Server from "./server.js";
-import Renderer from "./renderer.js";
-import { minify } from "html-minifier-terser";
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+const server_1 = __importDefault(require("./server"));
+const renderer_1 = __importDefault(require("./renderer"));
+const html_minifier_terser_1 = require("html-minifier-terser");
 const port = 0;
 const defaultSelector = "#root";
 const htmlPrerender = (options) => {
@@ -14,8 +19,8 @@ const htmlPrerender = (options) => {
     };
 };
 const emitRendered = async (options) => {
-    const server = new Server(port);
-    const renderer = new Renderer();
+    const server = new server_1.default(port);
+    const renderer = new renderer_1.default();
     await server
         .init(options.staticDir)
         .then(async () => {
@@ -34,7 +39,7 @@ const emitRendered = async (options) => {
         if (options.minify) {
             console.log("[vite-plugin-html-prerender] Minifying rendered HTML...");
             renderedRoutes.forEach(async (route) => {
-                route.html = await minify(route.html, options.minify);
+                route.html = await (0, html_minifier_terser_1.minify)(route.html, options.minify);
             });
         }
         return renderedRoutes;
@@ -56,4 +61,4 @@ const emitRendered = async (options) => {
         console.error("[vite-plugin-html-prerender] Failed to prerender routes:", e);
     });
 };
-export default htmlPrerender;
+exports.default = htmlPrerender;

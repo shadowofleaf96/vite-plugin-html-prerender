@@ -1,7 +1,7 @@
 import puppeteer, { Browser, PuppeteerLaunchOptions } from "puppeteer";
 import path from "path";
 import fs from "fs";
-import { RenderedRoute } from "./types.js";
+import { RenderedRoute } from "./types";
 
 export default class Renderer {
 
