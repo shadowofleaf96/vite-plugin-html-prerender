@@ -2,7 +2,7 @@ import type { Plugin } from "vite";
 import { HtmlPrerenderOptions, RenderedRoute } from "./types";
 import Server from "./server";
 import Renderer from "./renderer";
-import { minify } from "html-minifier";
+import { minify } from "html-minifier-terser";
 
 const port = 0;
 const defaultSelector = "#root";

@@ -1,4 +1,4 @@
-import { Options } from "html-minifier";
+import { Options } from "html-minifier-terser";
 
 export interface HtmlPrerenderOptions {
 
