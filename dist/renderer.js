@@ -10,7 +10,7 @@ class Renderer {
     _browser;
     async init() {
         const options = {
-            headless: "new",
+            headless: true,
             args: ["--no-sandbox", "--disable-setuid-sandbox"]
         };
         this._browser = await puppeteer_1.default.launch(options);

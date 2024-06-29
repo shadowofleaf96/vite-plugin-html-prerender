@@ -9,7 +9,7 @@ export default class Renderer {
 
     async init(): Promise<void> {
         const options: PuppeteerLaunchOptions = {
-            headless: "new",
+            headless: true,
             args: ["--no-sandbox", "--disable-setuid-sandbox"]
         };
 
