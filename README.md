@@ -38,7 +38,7 @@ export default defineConfig({
       selector: "main",
 
       /**
-       * Optional: To minify html.
+       * Optional: To minify html, use minify
        */
       minify: {
         collapseBooleanAttributes: true,
