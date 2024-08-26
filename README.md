@@ -38,7 +38,7 @@ export default defineConfig({
       selector: "main",
 
       /**
-       * Optional: To minify html. Uses https://github.com/kangax/html-minifier.
+       * Optional: To minify html.
        */
       minify: {
         collapseBooleanAttributes: true,
